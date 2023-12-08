@@ -71,3 +71,16 @@ p {
     background-color: black;
     color: white;
 }
+
+#resetButton {
+    background-color: red;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+#resetButton:hover {
+    background-color: darkred;
+}

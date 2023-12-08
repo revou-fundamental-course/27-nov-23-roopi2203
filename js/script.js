@@ -16,11 +16,20 @@ function calculate() {
     document.getElementById("resultPerimeter").innerText = perimeter.toFixed(2);
 }
 
+
 function toggleDarkMode() {
     document.body.classList.toggle('dark-mode');
 
     var button = document.getElementById('toggleDarkMode');
     button.innerText = document.body.classList.contains('dark-mode') ? 'White Mode' : 'Dark Mode';
 }
-
 document.getElementById('toggleDarkMode').addEventListener('click', toggleDarkMode);
+
+function reset() {
+    document.getElementById("sideA").value = "";
+    document.getElementById("sideB").value = "";
+    document.getElementById("sideC").value = "";
+    document.getElementById("resultArea").innerText = "";
+    document.getElementById("resultPerimeter").innerText = "";
+}
+document.getElementById('resetButton').addEventListener('click', reset);

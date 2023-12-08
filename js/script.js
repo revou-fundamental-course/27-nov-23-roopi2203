@@ -15,3 +15,9 @@ function calculate() {
     document.getElementById("resultArea").innerText = area.toFixed(2);
     document.getElementById("resultPerimeter").innerText = perimeter.toFixed(2);
 }
+
+function toggleDarkMode() {
+    document.body.classList.toggle('dark-mode');
+}
+
+document.getElementById('toggleDarkMode').addEventListener('click', toggleDarkMode);

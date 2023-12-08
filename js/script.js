@@ -18,6 +18,9 @@ function calculate() {
 
 function toggleDarkMode() {
     document.body.classList.toggle('dark-mode');
+
+    var button = document.getElementById('toggleDarkMode');
+    button.innerText = document.body.classList.contains('dark-mode') ? 'White Mode' : 'Dark Mode';
 }
 
 document.getElementById('toggleDarkMode').addEventListener('click', toggleDarkMode);
